@@ -6,9 +6,13 @@
 Feature: Feature to test Login Functionality with Sauce Demo Website
 
   @SmokeTest
-  Scenario: Verify Login is successful with valid credentials
+  Scenario Outline: Verify Login is successful with valid credentials
     Given browser is open
     And user is on Login Page
-    When user enters username and password
+    When user enters <username> and <password>
     And user clicks on Login Button
     Then user is navigated to Home Page
+    Examples:
+      | username | password |
+      | standard_user | secret_sauce
+      | visual_user | secret_sauce |

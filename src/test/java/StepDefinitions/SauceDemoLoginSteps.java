@@ -37,14 +37,14 @@ public class SauceDemoLoginSteps {
 
     }
 
-    @When("user enters username and password")
-    public void user_enters_username_and_password() {
+    @When("^user enters (.*) and (.*)$")  //Regex
+    public void user_enters_username_and_password(String username, String password) {
 
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user enters username and password");
-        driver.findElement(By.name("user-name")).sendKeys("standard_user");
-        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+        driver.findElement(By.name("user-name")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
 
     }
 

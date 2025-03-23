@@ -67,8 +67,23 @@
 
 * ### Selenium Cucumber Java BDD Framework 4 - Parameterization & Data Driven Testing
 
-      Step 1 : Check the scenario/navigation
+      Step 1 : In the feature file select the values that needs to be parameterized
 
-      Step 2 : Create a feature file and add Scenario and Steps
+      Step 2 : Put the values within conical brackets or double quotes (Parameterization)
 
-      Step 3 : Create Step Definition/Glue Code for the steps
+      Step 3 : Change Scenario to Scenario Outline
+
+      Step 4 : Add Examples section
+
+      Step 5 : Add data for the parameters in the Examples section
+
+      Step 6 : Update step definition to get values from feature file Examples section
+
+      Step 7 : Run Feature file and check the execution
+
+
+* ### Selenium Cucumber Java BDD Framework 6 - Page Object Model
+
+      Step 1 : In the feature file select the values that needs to be parameterized
+
+      Step 2 : Put the values within conical brackets or double quotes (Parameterization)
