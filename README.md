@@ -82,8 +82,18 @@
       Step 7 : Run Feature file and check the execution
 
 
-* ### Selenium Cucumber Java BDD Framework 6 - Page Object Model
+* ### Selenium Cucumber Java BDD Framework 5 - Page Object Model
 
-      Step 1 : In the feature file select the values that needs to be parameterized
+   ![img.png](img.png)
 
-      Step 2 : Put the values within conical brackets or double quotes (Parameterization)
+   ![img_1.png](img_1.png)
+
+ **Steps to Implement POM :** 
+
+      Step 1 : Create a Class for each page
+
+      Step 2 : Create locators of all objects to be used in that page
+      
+      Step 3 : Create methods or actions to be performed on the objects
+
+      Step 4 : Refer in the test scripts
