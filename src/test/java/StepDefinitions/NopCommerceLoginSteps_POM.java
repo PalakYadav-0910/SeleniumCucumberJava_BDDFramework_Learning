@@ -4,17 +4,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.DashboardPage;
+import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class SauceDemoLoginSteps {
+public class NopCommerceLoginSteps_POM {
 
     WebDriver driver = null;
+    LoginPage loginPage;
 
-    /*@Given("browser is open")
+    @Given("browser is open")
     public void browser_is_open() {
 
         // Write code here that turns the phrase above into concrete actions
@@ -33,41 +35,43 @@ public class SauceDemoLoginSteps {
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user is on Login Page");
-        driver.navigate().to("https://www.saucedemo.com/");
+        driver.navigate().to("https://admin-demo.nopcommerce.com/login");
 
-    }*/
+    }
 
-    /*@When("^user enters (.*) and (.*)$")  //Regex
-    public void user_enters_username_and_password(String username, String password) {
+    @When("user enters username and password")  //Regex
+    public void user_enters_username_and_password() {
 
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user enters username and password");
-        driver.findElement(By.name("user-name")).sendKeys(username);
-        driver.findElement(By.name("password")).sendKeys(password);
+        loginPage = new LoginPage(driver);
+        loginPage.enterUsername("admin@yourstore.com");
+        loginPage.enterPassword("admin");
 
-    }*/
+    }
 
-    /*@And("user clicks on Login Button")
+    @And("user clicks on Login Button")
     public void user_clicks_on_login_button() {
 
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user clicks on login button");
-        driver.findElement(By.name("login-button")).click();
+        loginPage.clickLogin();
 
-    }*/
+    }
 
-    @Then("user is navigated to Home Page")
-    public void user_is_navigated_to_home_page() {
+    @Then("user is navigated to Dashboard Page")
+    public void user_is_navigated_to_dashboard_page() {
 
         // Write code here that turns the phrase above into concrete actions
 
-        System.out.println("user is navigated to Home Page");
-        driver.getPageSource().contains("Products");
+        System.out.println("user is navigated to Dashboard Page");
+        DashboardPage dashboardPage = new DashboardPage(driver);
+        dashboardPage.clickLogout();
+
         driver.close();
         driver.quit();
 
     }
-
 }

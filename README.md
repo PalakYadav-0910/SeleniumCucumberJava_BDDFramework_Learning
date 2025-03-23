@@ -97,3 +97,10 @@
       Step 3 : Create methods or actions to be performed on the objects
 
       Step 4 : Refer in the test scripts
+
+      Step 5 : Run and Validate
+
+
+* ### Selenium Cucumber Java BDD Framework 6 - Page Factory
+
+

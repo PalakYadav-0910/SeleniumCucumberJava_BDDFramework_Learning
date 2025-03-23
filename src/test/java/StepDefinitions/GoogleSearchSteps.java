@@ -12,7 +12,7 @@ public class GoogleSearchSteps {
 
     WebDriver driver = null;
 
-    @Given("browser is open")
+    /*@Given("browser is open")
     public void browser_is_open() {
 
         // Write code here that turns the phrase above into concrete actions
@@ -23,7 +23,7 @@ public class GoogleSearchSteps {
         driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-    }
+    }*/
 
     @And("user is on google search page")
     public void user_is_on_google_search_page() {

@@ -14,5 +14,5 @@ Feature: Feature to test Login Functionality with Sauce Demo Website
     Then user is navigated to Home Page
     Examples:
       | username | password |
-      | standard_user | secret_sauce
+      | standard_user | secret_sauce |
       | visual_user | secret_sauce |

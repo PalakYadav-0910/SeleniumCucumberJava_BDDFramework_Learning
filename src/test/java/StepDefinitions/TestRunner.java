@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
            "pretty", "json:target/JSONReports/report.json",
            "pretty", "junit:target/JUnitReports/report.xml"
  },
-        tags = "@SmokeTest"
+        tags = "@RegressionTest"
  )
 public class TestRunner {
 }
