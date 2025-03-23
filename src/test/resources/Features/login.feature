@@ -6,7 +6,7 @@
 Feature: Feature to test Login Functionality
 
   @SmokeTest
-  Scenario: Check Login is successfull with valid credentials
+  Scenario: Check Login is successful with valid credentials
     Given user is on Login Page
     When user enters username and password
     And user clicks on Login Button

@@ -54,7 +54,20 @@
 
 * ### Selenium Cucumber Java BDD Framework 3 - Sample Login Test
 
-      Step 1 : Add Selenium Java Maven dependency
+      Step 1 : Check the scenario/navigation
+
+      Step 2 : Create a feature file and add Scenario and Steps
+
+      Step 3 : Create Step Definition/Glue Code for the steps
+ 
+      Step 4 : Add Selenium WebDriver code
+
+      Step 5 : Run Feature file and check the execution
+
+
+* ### Selenium Cucumber Java BDD Framework 4 - Parameterization & Data Driven Testing
+
+      Step 1 : Check the scenario/navigation
 
       Step 2 : Create a feature file and add Scenario and Steps
 
