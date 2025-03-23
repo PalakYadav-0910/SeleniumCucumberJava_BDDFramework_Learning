@@ -6,7 +6,7 @@
 
       Step 2 : Add Maven Dependencies
 
-               Cucumber Java | Cucumber JUnit | JUnit | Selenium Java**
+               Cucumber Java | Cucumber JUnit | JUnit | Selenium Java
 
       Step 3 : Create a Folder - Features under src/test/resources
 
@@ -39,12 +39,23 @@
 
 * ### Selenium Cucumber Java BDD Framework 2 - First Selenium Test
 
-      Step 1 : Create a new Maven Project
+      Step 1 : Add Selenium Java Maven dependency
 
-      Step 2 : Add Maven Dependencies
+      Step 2 : Create a feature file and add Scenario and Steps
 
-               Cucumber Java | Cucumber JUnit | JUnit | Selenium Java**
+      Step 3 : Create Step Definition/Glue Code for the steps
 
-      Step 3 : Create a Folder - Features under src/test/resources
+      Step 4 : Download browser driver files
 
-      Step 4 : Under Features folder create a new Feature File - login.feature
+      Step 5 : Add Selenium WebDriver code
+
+      Step 6 : Run Feature file and check the execution
+
+
+* ### Selenium Cucumber Java BDD Framework 3 - Sample Login Test
+
+      Step 1 : Add Selenium Java Maven dependency
+
+      Step 2 : Create a feature file and add Scenario and Steps
+
+      Step 3 : Create Step Definition/Glue Code for the steps
