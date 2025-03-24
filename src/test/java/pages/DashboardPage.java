@@ -25,7 +25,9 @@ public class DashboardPage {
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
-        driver.findElement(lnk_Logout).click();
+        if(driver.findElement(lnk_Logout).isDisplayed()){
+            driver.findElement(lnk_Logout).click();
+        }
 
     }
 }

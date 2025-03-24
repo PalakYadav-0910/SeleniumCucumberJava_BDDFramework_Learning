@@ -6,15 +6,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pageFactory.LoginPage_PF;
 import pages.DashboardPage;
-import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class NopCommerceLoginSteps_POM {
+public class NopCommerceLoginSteps_PF {
 
-    /*WebDriver driver = null;
-    LoginPage loginPage;
+    WebDriver driver = null;
+    LoginPage_PF loginPage;
 
     @Given("browser is open")
     public void browser_is_open() {
@@ -45,7 +45,7 @@ public class NopCommerceLoginSteps_POM {
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user enters username and password");
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage_PF(driver);
         loginPage.enterUsername("admin@yourstore.com");
         loginPage.enterPassword("admin");
 
@@ -57,7 +57,7 @@ public class NopCommerceLoginSteps_POM {
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println("user clicks on login button");
-        loginPage.clickLogin();
+        loginPage.clickLoginBtn();
 
     }
 
@@ -73,5 +73,5 @@ public class NopCommerceLoginSteps_POM {
         driver.close();
         driver.quit();
 
-    }*/
+    }
 }

@@ -3,9 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.net.InetAddress;
-import java.util.concurrent.TimeUnit;
-
 public class LoginPage {
 
     WebDriver driver;

@@ -92,7 +92,7 @@
 
       Step 1 : Create a Class for each page
 
-      Step 2 : Create locators of all objects to be used in that page
+      Step 2 : Create locators of all objects to be used in that page using By Class
       
       Step 3 : Create methods or actions to be performed on the objects
 
@@ -103,4 +103,36 @@
 
 * ### Selenium Cucumber Java BDD Framework 6 - Page Factory
 
+![img_2.png](img_2.png)
 
+**Steps to Implement Page Factory Model :** 
+
+      Step 1 : Create a Class for each page
+
+      Step 2 : Create locators of all objects to be used in that page using @FindBy annotation
+      
+      Step 3 : Create methods or actions to be performed on the objects
+
+      Step 4 : Create constructor to get driver instance and initialize elements using method initElements
+
+![img_3.png](img_3.png)
+
+      Step 5 : Update Test Scripts to refer methods from PageFactory class
+      
+      Step 6 : Run and Validate
+
+![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+
+* ### Selenium Cucumber Java BDD Framework 7 - Tags
+
+      Step 1 : Create a Class for each page
+
+      Step 2 : Create locators of all objects to be used in that page using @FindBy annotation
+      
