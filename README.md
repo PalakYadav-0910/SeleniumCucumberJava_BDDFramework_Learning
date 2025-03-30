@@ -132,7 +132,51 @@
 
 * ### Selenium Cucumber Java BDD Framework 7 - Tags
 
-      Step 1 : Create a Class for each page
+![img_8.png](img_8.png)
 
-      Step 2 : Create locators of all objects to be used in that page using @FindBy annotation
+![img_9.png](img_9.png)
+
+      Step 1 : Create a new or use an existing Feature file
+
+      Step 2 : Mark the feature and scenarios with Tags : @TagName
+
+      Step 3 : Create new or use an existing TestRunner Class
+
+      Step 4 : Add the tags in CucumberOptions section
       
+      @RunWith(Cucumber.class)
+      @CucumberOptions(features = "src/test/resources/Features", 
+      glue= {"StepDefinitions"},
+      monochrome = true,
+      tags = {"@RegressionTest"}
+      )
+      public class TestRunner_RunWithSingleTag {
+      }
+
+      Step 5 : Run test runner class with different combination of tags
+      
+      - Single Tag -> tags={"@smoke"}
+
+      - Multiple Tags -> Tags with AND/OR conditions
+      tags={"@smoke or @regression"}
+      tags={"@smoke and @regression"}
+      tags={"@smoke or @regression and @important"}
+      tags={"(@smoke or @regression) and @important"}
+
+      - Skip or Ignore Tests -> Using not
+      tags={"@smoke and not @regression"}
+
+![img_10.png](img_10.png)
+
+![img_12.png](img_12.png)
+
+![img_11.png](img_11.png)
+
+![img_13.png](img_13.png)
+
+### mvn test -Dcucumber.filter.tags="@smoke and @fast"
+
+![img_14.png](img_14.png)
+
+
+* ### Selenium Cucumber Java BDD Framework 8 - Hooks
