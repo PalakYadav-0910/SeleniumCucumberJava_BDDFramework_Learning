@@ -255,3 +255,42 @@
 
 * ## Selenium Cucumber Java BDD Framework 9 - Background
 
+![img_29.png](img_29.png)
+
+## What is Background ??
+
+### - A step or a group of steps that are common to all the scenarios in a feature
+### - Is Defined once in the feature
+### - Runs before every scenario of the feature
+
+## Why to use Background ??
+
+### - To avoid repeating the common steps in every scenario
+### - For better readability & maintenance
+### - Unlike hooks,background is visible to the readers of the feature file
+
+## When to use Background ??
+
+### - Whenever there are common repeating steps in a feature
+### - When you want the common steps to be visible to the readers
+
+## How to use BACKGROUND ??
+
+      Step 1 : Create a new or use an existing Feature file
+
+      Step 2 : Create the steps for the scenario in the feature file
+
+      Step 3 : Create new or use an existing TestRunner Class
+
+      Step 4 : Run the test runner file
+
+      Step 5 : Create a background section and add common steps
+ 
+      Step 6 : Run the test runner file and check execution of background
+
+![img_30.png](img_30.png)
+
+![img_31.png](img_31.png)
+
+
+* ## Selenium Cucumber Java BDD Framework 10 - How to run from Command Line
