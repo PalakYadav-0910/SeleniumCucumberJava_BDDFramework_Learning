@@ -88,7 +88,7 @@
 
    ![img_1.png](img_1.png)
 
- **Steps to Implement POM :** 
+### Steps to Implement POM :
 
       Step 1 : Create a Class for each page
 
@@ -105,7 +105,7 @@
 
 ![img_2.png](img_2.png)
 
-**Steps to Implement Page Factory Model :** 
+### Steps to Implement Page Factory Model :
 
       Step 1 : Create a Class for each page
 
@@ -180,3 +180,78 @@
 
 
 * ## Selenium Cucumber Java BDD Framework 8 - Hooks
+
+![img_15.png](img_15.png)
+
+![img_16.png](img_16.png)
+
+![img_17.png](img_17.png)
+
+## Why to use HOOKS ??
+
+ ### - To manage the setup and tear down
+ ### - To avoid re-writing the common setup or teardown actions
+ ### - Allow better management of code workflow
+
+## When to use HOOKS ??
+
+ ### Whenever you have some common setup and teardown actions to be executed 
+ ### before each scenario then we use hooks.
+
+## How to use HOOKS ??
+
+      Step 1 : Create a new or use an existing Feature file
+
+      Step 2 : Create the steps for the scenario in the feature file
+
+      Step 3 : Create setup and teardown methods and mark with annotation
+               @Before       @BeforeSteps
+               @After        @AfterSteps
+
+**import io.cucumber.java.After;**
+
+**import io.cucumber.java.AfterStep;**
+
+**import io.cucumber.java.Before;**
+
+**import io.cucumber.java.BeforeStep;**
+
+### So, these functions have become hooks and will be executed before and after every scenario in the feature
+
+![img_19.png](img_19.png)
+
+### Using @BeforeStep and @AfterStep, these hooks will be executed before and after each step
+
+![img_20.png](img_20.png)
+
+       Step 4 : Create new or use an existing TestRunner Class
+      
+       Step 5 : Run the TestRunner class and check execution
+
+### Ordering of HOOKS : Manage Execution Order of Hooks
+
+**By Default, they will be executed in alphabetical order of method names but we can assign order to them**
+
+![img_21.png](img_21.png)
+
+![img_22.png](img_22.png)
+
+### Tags with HOOKS - Conditional HOOKS
+
+![img_25.png](img_25.png)
+
+**@Before("@smoke")**
+
+**@Before(value = "@smoke", order = 1)**
+
+![img_24.png](img_24.png)
+
+![img_26.png](img_26.png)
+
+![img_27.png](img_27.png)
+
+![img_28.png](img_28.png)
+
+
+* ## Selenium Cucumber Java BDD Framework 9 - Background
+
