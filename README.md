@@ -1,6 +1,6 @@
-## Selenium Cucumber Java BDD Framework
+# Selenium Cucumber Java BDD Framework
  
-* ### Selenium Cucumber Java BDD Framework 1 - Setup
+* ## Selenium Cucumber Java BDD Framework 1 - Setup
 
       Step 1 : Create a new Maven Project
 
@@ -37,7 +37,7 @@
       Step 11 : Run and Verify Results
 
 
-* ### Selenium Cucumber Java BDD Framework 2 - First Selenium Test
+* ## Selenium Cucumber Java BDD Framework 2 - First Selenium Test
 
       Step 1 : Add Selenium Java Maven dependency
 
@@ -52,7 +52,7 @@
       Step 6 : Run Feature file and check the execution
 
 
-* ### Selenium Cucumber Java BDD Framework 3 - Sample Login Test
+* ## Selenium Cucumber Java BDD Framework 3 - Sample Login Test
 
       Step 1 : Check the scenario/navigation
 
@@ -65,7 +65,7 @@
       Step 5 : Run Feature file and check the execution
 
 
-* ### Selenium Cucumber Java BDD Framework 4 - Parameterization & Data Driven Testing
+* ## Selenium Cucumber Java BDD Framework 4 - Parameterization & Data Driven Testing
 
       Step 1 : In the feature file select the values that needs to be parameterized
 
@@ -82,7 +82,7 @@
       Step 7 : Run Feature file and check the execution
 
 
-* ### Selenium Cucumber Java BDD Framework 5 - Page Object Model
+* ## Selenium Cucumber Java BDD Framework 5 - Page Object Model
 
    ![img.png](img.png)
 
@@ -101,7 +101,7 @@
       Step 5 : Run and Validate
 
 
-* ### Selenium Cucumber Java BDD Framework 6 - Page Factory
+* ## Selenium Cucumber Java BDD Framework 6 - Page Factory
 
 ![img_2.png](img_2.png)
 
@@ -130,7 +130,7 @@
 ![img_7.png](img_7.png)
 
 
-* ### Selenium Cucumber Java BDD Framework 7 - Tags
+* ## Selenium Cucumber Java BDD Framework 7 - Tags
 
 ![img_8.png](img_8.png)
 
@@ -179,4 +179,4 @@
 ![img_14.png](img_14.png)
 
 
-* ### Selenium Cucumber Java BDD Framework 8 - Hooks
+* ## Selenium Cucumber Java BDD Framework 8 - Hooks
