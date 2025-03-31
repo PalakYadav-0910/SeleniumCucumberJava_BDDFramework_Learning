@@ -1,5 +1,7 @@
 # Selenium Cucumber Java BDD Framework
- 
+
+![img_44.png](img_44.png)
+
 * ## Selenium Cucumber Java BDD Framework 1 - Setup
 
       Step 1 : Create a new Maven Project
@@ -294,3 +296,85 @@
 
 
 * ## Selenium Cucumber Java BDD Framework 10 - How to run from Command Line
+
+## What is Command Line Execution ??
+
+### - Running your tests or features from command line or terminal without using the IDE or GUI (Intellij etc.)
+
+We can use command prompt on windows or terminal on mac for executing.
+
+- Command Line on Windows
+- Terminal on Mac
+- Console
+
+## Why to use Command Line ??
+
+### - No Dependency on IDE or GUI
+### - Useful in integrations with other processes like Continuous Integration, Delivery and Deployment
+### - Easier and Faster
+### - Consumes less memory
+
+## When to use Command Line ??
+
+### - Whenever you need to run the tests faster without opening IDE
+### - Whenever you need to do integrations with other processes CI, CD, DevOps
+### - Whenever using CI tools like Jenkins
+### - Whenever you need any batch or scheduled execution
+### - Whenever you are done with your test creation and setup
+
+### Command Line - Step by Step
+
+      Step 1 : Right Click on the project and select Run As -> Maven test
+
+      Step 2 : Check the Console Logs
+
+      Step 3 : Troubleshoot and correct the errors
+
+      Step 4 : Open CMD Prompt
+
+      Step 5 : Check MAVEN is installed mvn -version
+
+      Step 6 : CD to the project location
+
+      Step 7 : Run command mvn test
+
+![img_32.png](img_32.png)
+
+![img_33.png](img_33.png)
+
+![img_34.png](img_34.png)
+
+### Overriding Cucumber Options from Command Line
+
+![img_36.png](img_36.png)
+
+![img_37.png](img_37.png)
+
+![img_38.png](img_38.png)
+
+![img_39.png](img_39.png)
+
+
+* ## Selenium Cucumber Java BDD Framework 11 - How To Create HTML Reports
+
+## How to generate HTML Report
+
+      Step 1 : Add the maven cucumber reporting dependency in pom.xml
+
+      Step 2 : Add the build plugins in pom.xml
+
+      Step 3 : Clean Project
+
+      Step 4 : From command line run - mvn test
+
+      Step 5 : From command line run - mvn verify
+
+      Step 6 : Check report generated
+
+![img_40.png](img_40.png)
+
+![img_41.png](img_41.png)
+
+![img_42.png](img_42.png)
+
+![img_43.png](img_43.png)
